@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -19,29 +19,37 @@ return {
   -- { "jay-babu/mason-null-ls.nvim" },
   -- { "jay-babu/mason-nvim-dap.nvim" },
   {
-  	"williamboman/mason.nvim",
-  	opts = {
-  		ensure_installed = {
-  			"lua-language-server", "stylua",
-  			"html-lsp", "css-lsp" , "prettier",
-        "pyright", "ruff", "black", "isort",
-  		},
-  	},
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
+        "pyright",
+        "ruff",
+        "black",
+        "isort",
+      },
+    },
   },
 
-  { "nvimtools/none-ls.nvim" },
+  -- { "nvimtools/none-ls.nvim" },
 
   {
     "karloskar/poetry-nvim",
     config = function()
-        require("poetry-nvim").setup()
-    end
+      require("poetry-nvim").setup()
+    end,
   },
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {},
-    config = function(_, opts) require'lsp_signature'.setup(opts) end
+    config = function(_, opts)
+      require("lsp_signature").setup(opts)
+    end,
   },
 
   {
@@ -53,18 +61,21 @@ return {
 
   {
     "NvChad/nvterm",
-    config = function ()
+    config = function()
       require("nvterm").setup()
     end,
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-        "html", "css"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+      },
+    },
   },
 }
