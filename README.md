@@ -10,7 +10,7 @@
 
 ## Gallery ✨
 
-*For better performance, use [Aidenable/**dotfiles**](https://github.com/Aidenable/dotfiles)*
+*For better performance, use [Aidenable/**arch-dotfiles**](https://github.com/Aidenable/arch-dotfiles) or [Aidenable/**macos-dotfiles**](https://github.com/Aidenable/macos-dotfiles)*
 
 ![Menu](/images/menu.png)
 ![Cheatsheet](/images/cheatsheet.png)
