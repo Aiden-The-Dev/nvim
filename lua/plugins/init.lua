@@ -14,6 +14,14 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "nvim-lua/completion-nvim",
+    config = function()
+      require("configs.lspconfig").pyls.setup {
+        on_attach = require("completion").on_attach,
+      }
+    end,
+  },
 
   -- { "williamboman/mason-lspconfig.nvim" },
   -- { "jay-babu/mason-null-ls.nvim" },
